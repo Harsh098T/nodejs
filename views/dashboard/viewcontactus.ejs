@@ -1,0 +1,52 @@
+<%- include('./header.ejs')%>
+
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+
+
+            <div class="col-sm-12 col-md-3 col-lg-2 p-0">
+                <%- include('./left.ejs')%>
+            </div>
+            <div class="col-sm-9">
+
+
+                <% if(contactdata.length>0){ %>
+                    <table class="table table-bordered table-sm " id="myTable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Message</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <%for(var i=0; i<contactdata.length; i++){%>
+                                <tr>
+                                    <td>
+                                        <%= contactdata[i].name %>
+                                    </td>
+                                    <td>
+                                        <%= contactdata[i].email %>
+                                    </td>
+                                    <td>
+                                        <%= contactdata[i].message %>
+                                    </td>
+                                    <td> <a href="/deletecon/<%= contactdata[i].id %>">delete</a>
+                                    </td>
+                                </tr>
+                                </tr>
+                                <% } %>
+
+                        </tbody>
+                    </table>
+                    <% } else { %>
+                        No record found
+
+                        <%} %>
+
+            </div>
+        </div>

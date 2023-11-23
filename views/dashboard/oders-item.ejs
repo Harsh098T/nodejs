@@ -1,0 +1,52 @@
+<%- include('./header.ejs')%>
+
+<style>
+  img{
+    height: 40px;
+  }
+</style>
+
+
+ <div class="container-fluid">
+    <div class="row">
+
+    
+        <div class="col-sm-12 col-md-3 col-lg-2 p-0">
+            <%- include('./left.ejs')%>
+        </div>
+
+        <div class="col-sm-12 col-md-9 col-lg-10 " style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+          <% if( orderitem.length>0){%>
+            
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">productname</th>
+                    <th scope="col">product</th>
+                    <th scope="col">price</th>
+                    <th scope="col">file</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">delete</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <%for(var i=0; i< orderitem.length; i++){%>
+                    <tr>
+                      <td><%= orderitem[i].productname %></td>
+                      <td><%= orderitem[i].product %></td>
+                      <td><%= orderitem[i].price %></td>
+                      <td><img src="http://localhost:8000/upload/<%= orderitem[i].img%>"></td>
+                      <td><a href="/edit2/<%= orderitem[i].id %>">Edit</a>&nbsp;&nbsp;</td>
+                       <td><a href="/delete_2/<%= orderitem[i].id %>">delete</a></td>
+                      </tr> 
+                    </tr>
+                    <%} %>
+                </tbody>
+              </table>
+              <%} else{ %>
+                no record fount
+
+                <%} %>
+
+   </div>
+</div>

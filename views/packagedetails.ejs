@@ -1,0 +1,38 @@
+<style>
+.imges img{
+    height: 500px;
+    background-size: cover;
+}
+</style>
+<%- include('common/header.ejs') %> 
+<div class="container  mt-5">
+    <div class="row">
+        <div class="col-md-6  imges">
+            <img class="img-fluid w-75" src="http://localhost:8000/upload/<%= orderitem.img %>">
+            </div> 
+            <div class="col-md-6  mt-5">
+                <div class="row">
+                    <div class="col-ms-12">
+                <p>
+                    <h1><%= orderitem.productname %></h1>
+                </p>
+                </div>
+                <div class="col-ms-12 mt-5">
+                <h4><%= orderitem.product %></h4>
+                </div>
+                <div class="col-ms-12 mt-5" >
+                    <h3><strong class="m-auto">
+                        $<%= orderitem.price %>
+                    </strong></h3>
+                </div>
+
+                        <!-- <h1><%= orderitem.productname %></h1>
+                        <h1><%= orderitem.product %></h1>
+                        <h1><%= orderitem.price %></h1> -->
+                        
+                        <!-- <td><img src="http://localhost:8000/upload/<%= orderitem.img%>" style="height: 100px;"></td> --> 
+                    
+            <!-- <h1><%= orderitem.productname %></h1>
+            <h1><%= orderitem.product %></h1>
+            <h1><%= orderitem.price %></h1>
+            </div> -->

@@ -1,0 +1,246 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.hh li {
+    margin-left: 100px;
+}
+
+.hp h4 {
+    text-align: right;
+}
+
+.hp a {
+    float: right;
+    color: white;
+    text-decoration: none;
+}
+
+/* INDEX....................................................... */
+.ht {
+    background-image: url(/assets/images/background.jpg);
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ht h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 250px;
+}
+
+.ht h3 {
+    color: #ffffff;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.background {
+    background-image: url(/assets/images/food.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-attachment: fixed;
+}
+
+.background h1 {
+    color: green;
+    padding-top: 150px;
+}
+
+.background p {
+    color: #ffffff;
+}
+
+.consolw img {
+    background-size: cover;
+}
+
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item>div {
+        display: none
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex
+}
+
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%)
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%)
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0)
+}
+#up{border-style: groove;
+    border-radius: 1px;
+border-color: black;
+}
+#up h4{
+    border-style: groove;
+    border-radius: 1px;
+    border-color: black;    
+}
+#up h4 img  {
+    float: right;
+}
+
+/* /INDEX END....................................................... */
+/* NAVBAR..................................................  */
+
+.custom_nav ul li a {
+    color: rgba(219, 217, 217, 0.76);
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.custom_nav ul li a:hover {
+    color: #ffffff;
+}
+
+
+/* .op{
+  background-image: url(/assets/images/background.jpg);
+  height: 600px;
+  background-size: cover;
+}
+.op{
+    display: flex;
+    justify-content: center;
+} */
+
+
+.bg_image{
+    background-size: cover;
+    opacity: 0.9;
+    background-image: url(/assets/images/background.jpg);
+    background-size: cover;
+    height: 700px;
+
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/images/why-choose-us-img.jpg); */
+}
+
+
+.body {
+    background-image: url('#');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    color: black;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* NAVBAR END..............................................*/
+
+/* nav bar views/Registration.ejs .......................................*/
+
+.body1 {
+    /* background-image: url('/assets/images/background.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    color: black;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* nav bar views/Registration.ejs .......................................*/
+
+
+/* contact us .......................................... */
